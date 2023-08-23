@@ -8,10 +8,10 @@ import cv2
 import numpy as np
 import torch
 import torch.utils.data as data
-from scipy.misc import imsave
+from imageio.core.functions import imread
 from torchvision import transforms
 from tqdm import tqdm
-from albumentations.pytorch import ToTensor
+from albumentations.pytorch.transforms import ToTensor
 from head_detection.vision.utils import collate_fn as coco_collate
 
 

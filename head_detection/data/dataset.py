@@ -11,13 +11,13 @@ import numpy as np
 import torch
 import torch.utils.data as data
 from albumentations import BboxParams, Compose, HorizontalFlip
-from albumentations.pytorch import ToTensor
+from albumentations.pytorch.transforms import ToTensor
 from torchvision.ops.boxes import clip_boxes_to_image
 
 try:
     from scipy.misc import imread
 except ImportError:
-    from scipy.misc.pilutil import imread
+    from imageio.core.functions import imread
 
 class HeadDataset(data.Dataset):
     """

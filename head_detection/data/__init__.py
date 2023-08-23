@@ -2,7 +2,7 @@
 import os.path as osp
 
 import numpy as np
-from scipy.misc import imread
+from imageio.core.functions import imread
 from tqdm import tqdm
 
 from .dataset import *
