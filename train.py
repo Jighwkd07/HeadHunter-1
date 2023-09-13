@@ -10,6 +10,11 @@ import cv2
 import torch
 import yaml
 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+#from pygeos import box,area,intersection
+
+
 from head_detection.data import (HeadDataset, cfg_mnet, cfg_res50,
                                  cfg_res50_4fpn, cfg_res152, ch_anchors,
                                  combined_anchors, compute_mean_std,
@@ -182,3 +187,4 @@ def train():
 
 if __name__ == '__main__':
     train()
+

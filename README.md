@@ -65,7 +65,7 @@ This codebase borrows a noteable portion from pytorch-vision owing to the fact s
 
 ## Citation :
 
-```
+0```
 @InProceedings{Sundararaman_2021_CVPR,
     author    = {Sundararaman, Ramana and De Almeida Braga, Cedric and Marchand, Eric and Pettre, Julien},
     title     = {Tracking Pedestrian Heads in Dense Crowd},
